@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Start Local DNS Black Hole",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.cli",
+      "args": ["start", "--port", "8053"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Demo - Blocked Coolmath Games",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/demo_client.py",
+      "args": ["coolmathgames.com", "--port", "8053"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Demo - Allowed Example Domain",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/demo_client.py",
+      "args": ["example.com", "--port", "8053"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "blocked_domains": [
+    "example-blocked.test",
+    "coolmathgames.com"
+  ],
+  "blocked_keywords": [
+    "proxy"
+  ]
+}
